@@ -1,79 +1,95 @@
-<!DOCTYPE html>
 <html>
+	<head>
+		<title>Mars Explorer</title>
+		<link href="stylesheets/Maze.css" rel="stylesheet" type="text/css">
+		<script src="javascripts/Maze.js"></script>
+		<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	</head>
+	<body>
+		<h1 id="title">Mouse Maze</h1>
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="scripted-maze : " />
+		<div class='maze'>
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+			<div id="x1y8" class='section block'></div>
+			<div id="x2y8" class='section block'></div>
+			<div id="x3y8" class='section'></div>
+			<div id="x4y8" class='section'></div>
+			<div id="x5y8" class='section block'></div>
+			<div id="x6y8" class='section block'></div>
+			<div id="x7y8" class='section block'></div>
+			<div id="x8y8" class='section cheese'></div>
 
-    <title>scripted-maze</title>
-  </head>
+			<div id="x1y7" class='section block'></div>
+			<div id="x2y7" class='section'></div>
+			<div id="x3y7" class='section block'></div>
+			<div id="x4y7" class='section'></div>
+			<div id="x5y7" class='section block'></div>
+			<div id="x6y7" class='section'></div>
+			<div id="x7y7" class='section'></div>
+			<div id="x8y7" class='section'></div>
 
-  <body>
+			<div id="x1y6" class='section'></div>
+			<div id="x2y6" class='section'></div>
+			<div id="x3y6" class='section block'></div>
+			<div id="x4y6" class='section'></div>
+			<div id="x5y6" class='section'></div>
+			<div id="x6y6" class='section block'></div>
+			<div id="x7y6" class='section'></div>
+			<div id="x8y6" class='section block'></div>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/chrisgeorge/scripted-maze">View on GitHub</a>
+			<div id="x1y5" class='section'></div>
+			<div id="x2y5" class='section block'></div>
+			<div id="x3y5" class='section block'></div>
+			<div id="x4y5" class='section'></div>
+			<div id="x5y5" class='section block'></div>
+			<div id="x6y5" class='section block'></div>
+			<div id="x7y5" class='section'></div>
+			<div id="x8y5" class='section block'></div>
 
-          <h1 id="project_title">scripted-maze</h1>
-          <h2 id="project_tagline"></h2>
+			<div id="x1y4" class='section'></div>
+			<div id="x2y4" class='section'></div>
+			<div id="x3y4" class='section'></div>
+			<div id="x4y4" class='section'></div>
+			<div id="x5y4" class='section'></div>
+			<div id="x6y4" class='section'></div>
+			<div id="x7y4" class='section'></div>
+			<div id="x8y4" class='section block'></div>
 
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/chrisgeorge/scripted-maze/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/chrisgeorge/scripted-maze/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
+			<div id="x1y3" class='section block'></div>
+			<div id="x2y3" class='section'></div>
+			<div id="x3y3" class='section block'></div>
+			<div id="x4y3" class='section block'></div>
+			<div id="x5y3" class='section block'></div>
+			<div id="x6y3" class='section block'></div>
+			<div id="x7y3" class='section'></div>
+			<div id="x8y3" class='section'></div>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+			<div id="x1y2" class='section block'></div>
+			<div id="x2y2" class='section'></div>
+			<div id="x3y2" class='section'></div>
+			<div id="x4y2" class='section'></div>
+			<div id="x5y2" class='section block'></div>
+			<div id="x6y2" class='section'></div>
+			<div id="x7y2" class='section block'></div>
+			<div id="x8y2" class='section'></div>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+			<div id="x1y1" class='section mouse'></div>
+			<div id="x2y1" class='section'></div>
+			<div id="x3y1" class='section block'></div>
+			<div id="x4y1" class='section'></div>
+			<div id="x5y1" class='section'></div>
+			<div id="x6y1" class='section'></div>
+			<div id="x7y1" class='section block'></div>
+			<div id="x8y1" class='section block'></div>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+		</div>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">scripted-maze maintained by <a href="https://github.com/chrisgeorge">chrisgeorge</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-    
-
-  </body>
+		<div class='info-section'>
+			<div id='tracking-section'>
+				Number of moves so far:&nbsp;<span class='num-moves'>0</span>
+			</div>
+			<div id='outcome-section'></div>
+			<div id='reset-button'>RESET</div>
+		</div>
+	</body>
 </html>

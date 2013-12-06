@@ -18,7 +18,7 @@ h1 {
 }
 
 .section.cheese {
-	background: url('cheese.jpeg');
+	background: url('../images/cheese.jpeg');
 	background-size: 50px 50px;
 	background-repeat: no-repeat;
 }
@@ -28,7 +28,7 @@ h1 {
 }
 
 .section.mouse {
-	background: url('mouse.jpeg');
+	background: url('../images/mouse.jpeg');
 	background-size: 50px 50px;
 	background-repeat: no-repeat;
 }
